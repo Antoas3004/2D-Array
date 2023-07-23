@@ -1,0 +1,21 @@
+public class Addition {
+
+	public static void main(String[] args) {
+		
+		//Addition of, two 2d array
+		int a[][] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		int b[][] = { { 9, 8, 7 }, { 6, 5, 4 }, { 3, 2, 1 } };
+		
+		//Create new 2d array to stored Addition value
+		int c[][] = new int[3][3];
+		
+		//Addition logic for 2d array
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				c[i][j] = a[i][j] + b[i][j];
+				System.out.print(c[i][j] + " ");
+			}
+			System.out.println();
+		}
+	}
+}
